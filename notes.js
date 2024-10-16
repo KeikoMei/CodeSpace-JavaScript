@@ -142,6 +142,22 @@ JavaScript Logical Operators
 || 	Logical OR: true if either of the operands/boolean values is true. evaluates to false if both are false 	true || false; // true
 ! 	Logical NOT: true if the operand is false and vice-versa. 	!true; // false
 
+
+//Template Literals 
+
+Strings wrapped in backticks (`) for easier string manipulation.
+    
+    console.log(`Hello, ${name}!`); 
+
+    String Interpolation: Embed variables and expressions with ${}.
+    Multi-line Support: Create strings across multiple lines without escape characters.
+    Expression Evaluation: Use any JavaScript expression inside ${}.
+    Enhanced Readability: Cleaner and less error-prone than concatenation.
+
+    
+
+
+
 JavaScript Conditional Statements
 
 If Statement
@@ -157,7 +173,6 @@ if (condition)
 {
     // block of code if condition is true
 } 
-
 else 
 {
    // block of code if condition is false
@@ -198,6 +213,8 @@ switch(variable/expression)
         // body of default
 }
 
+--------------------------------------------
+
 Loops
 
 For Loop
@@ -217,7 +234,7 @@ parseInt() - parses a string and returns an integer
 
 parseInt(string, radix); //radix is optional and specifies the base of the number in the string (between 2 and 36) -> parseInt('10', 2) -> 2
 
-Do-While Loop
+Do-While Loop //the body of loop is executed at least once
 
 do
 {
@@ -226,6 +243,135 @@ do
 
 
 */
+
+//Arrays
+//An array is a special variable, which can hold more than one value.
+//Arrays are a collection of data items, all of the same type, stored at contiguous memory locations.
+const fruits = ["apple", "orange", "mango"];
+
+//You can also create an array, and then provide the elements.
+
+const fruits = [];
+fruits[0]= "apple";
+fruits[1]= "orange";
+fruits[2]= "mango";
+
+//You access an array element by referring to the index number.
+
+//Array Properties and Methods
+
+// length -> returns the length of an array
+
+let length = fruits.length;
+
+//Adding Array Elements
+//use  push() method.
+
+fruits.push("apple");  // Adds a new element (Apple) to fruits
+
+//Removing Array Elements
+//use pop() method.
+
+fruits.pop();  // Removes the last element ("Apple") from fruits
+
+//Sorting Array Elements
+
+fruits.sort()   // Sorts the array
+
+//--------------------------------------------
+
+//Functions
+
+//A function is a block of code that performs a specific task.
+
+//Function Declaration
+
+function functionName (parameters)
+{
+    // code block
+    return value;
+}
+
+//Function Expression
+
+const functionName = function(parameters) {/*code*/ return value;}
+
+//--------------------------------------------//
+
+// JavaScript Document Object Model (DOM)
+
+/*The Document Object Model (DOM) is a programming interface for web documents.
+It represents the structure of the document as a tree of nodes.
+The DOM represents an HTML document as a hierarchy of nodes. 
+
+DOM methods are actions you can perform (on HTML Elements). 
+
+DOM properties are values (of HTML Elements) that you can set or change.
+
+Finding HTML Elements
+
+Method 	Description
+document.getElementById(id) 	Find an element by element id
+document.getElementsByTagName(name) 	Find elements by tag name
+document.getElementsByClassName(name) 	Find elements by class name
+
+Changing HTML Elements
+
+Property 	Description
+element.innerHTML =  new html content 	Change the inner HTML of an element
+element.attribute = new value 	Change the attribute value of an HTML element
+element.style.property = new style 	Change the style of an HTML element
+Method 	Description
+element.setAttribute(attribute, value) 	Change the attribute value of an HTML element
+
+Adding and Deleting Elements
+
+Method 	Description
+document.createElement(element) 	Create an HTML element
+document.removeChild(element) 	Remove an HTML element
+document.appendChild(element) 	Add an HTML element
+document.replaceChild(new, old) 	Replace an HTML element
+document.write(text) 	Write into the HTML output stream
+
+Adding Events Handlers
+
+Method 	Description
+document.getElementById(id).onclick = function(){code} 	Adding event handler code to an onclick event
+
+DOM querySelectorAll() Method
+
+The querySelectorAll() method in HTML is used to return a collection of an element’s child elements that match a specified CSS selector(s).
+
+Syntax:
+
+element.querySelectorAll(selectors)
+
+
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

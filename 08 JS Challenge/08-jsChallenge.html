@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Challenge</title>
+    </head>
+    <body>
+
+        <h1>Lets play Rock Paper Scissors!</h1>
+    
+        <span style="margin: 10px;">
+            <label for="rock">Rock</label>
+            <input type="radio" id="rock" name="choice" value="Rock">
+        </span>
+
+        <span style="margin: 10px;">
+            <label for="paper">Paper</label>
+            <input type="radio" id="paper" name="choice" value="Paper">
+        </span>
+
+        <span style="margin: 10px;">
+            <label for="scissors">Scissors</label>
+            <input type="radio" id="scissors" name="choice" value="Scissors">
+        </span>
+
+        <br><br>
+
+        <button onclick="playGame()">Play</button>
+  
+        <h1 id="playerChoice"></h1>
+        <h1 id="computerChoice"></h1>
+        <h1 id="result"></h1>
+
+        <script src="./07-jsChallenge.js"></script>
+
+    </body>
+</html>
